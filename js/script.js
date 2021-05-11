@@ -22,7 +22,7 @@ if (randomNumber == '1') {
 } else {
   computerMove = 'nieznany ruch';
 }
-printMessage('Mój ruch: ' + computerMove);
+printMessage('Robot: ' + computerMove);
 
 // Papier kamien nozyce - gracz
 var playerInput, playerMove;
@@ -37,4 +37,4 @@ if (playerInput == '1') {
 } else {
   playerMove = 'kamień ';
 }
-printMessage('Twój ruch: ' + playerMove);
+printMessage('Gracz: ' + playerMove);
