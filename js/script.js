@@ -1,5 +1,5 @@
 function printMessage(msg){
-	var div = document.createElement('div');
+	const div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
@@ -42,7 +42,7 @@ function buttonClicked(argButtonName) {
   clearMessages();
 
   const playerMove = argButtonName;
-  const randomNumber = Math.floor(Math.random() * 3 + 1);
+  let randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
   const computerMove = getMoveName(randomNumber);
   console.log('ruch komputera to: ' + computerMove);
